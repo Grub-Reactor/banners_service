@@ -6,7 +6,7 @@ USE restaurants;
 
 CREATE TABLE banners (
 	id INT PRIMARY KEY AUTO_INCREMENT,
-	title VARCHAR(100),
+	name VARCHAR(100),
 	logo_img VARCHAR(100),
 	bg_img VARCHAR(100),
 	address VARCHAR(100),
