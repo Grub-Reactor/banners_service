@@ -7,7 +7,7 @@ class Banner extends Component {
     this.state = { 
       items: []
     };
-    fetch('http://localhose:3005/banners')
+    fetch('http://localhose:3005/restaurants/id/banners')
       .then(responses => response.json())
       .then(banners => (this.setState({items})))
   }

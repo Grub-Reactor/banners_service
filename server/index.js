@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-const getAll = require('../database/seed.js');
+const db = require('../database/index.js');
 
 const connection = mysql.createConnection({
 	host: 'localhost',
@@ -15,17 +15,19 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 
-app.get('/banners', function(req, res) {
-	connection.connect();
-	connection.query('SELECT * FROM banners', function (error, results, fields) {
-		if (error) throw error;
-		res.send(results);
+app.get('/restaurants/id/banners', (req, res) => {
+	db.getFiveRestaurants( (error, results, fields) => {
+		if (error) {
+			res.send(error);
+		} else {
+			res.writeHead(201, {'Content-Type': 'application/json'});
+			res.end(JSON.stringify(results));
+		}
 	});
-	connection.end();
 });
 
 
-// app.post('/banners', function (req, res) {
+// app.post('/restaurants/id/banners', (req, res) => {
 //   db.insertInfo(req.body.id, req.body.title, req.body.logo_img, req.body.bg_img, req.body.address, req.body.ph_number, req.body.rating, req.body.no_of_ratings, req.body.bookmark, req.body.rest_id, (err, results) => {
 //     console.log('this is req.body: ', req.body);
 //     if (err) {
