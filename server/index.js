@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 
-app.get('/restaurants/id/banners', (req, res) => {
-	db.getFiveRestaurants( (error, results, fields) => {
+app.get('/restaurants/banners/:rest_id', (req, res) => {
+	db.getAll(req.params.rest_id, (error, results) => {
 		if (error) {
 			res.send(error);
 		} else {
@@ -25,18 +25,6 @@ app.get('/restaurants/id/banners', (req, res) => {
 		}
 	});
 });
-
-
-// app.post('/restaurants/id/banners', (req, res) => {
-//   db.insertInfo(req.body.id, req.body.title, req.body.logo_img, req.body.bg_img, req.body.address, req.body.ph_number, req.body.rating, req.body.no_of_ratings, req.body.bookmark, req.body.rest_id, (err, results) => {
-//     console.log('this is req.body: ', req.body);
-//     if (err) {
-//       res.status(500).send(err, null);
-//     } else {
-//       res.status(201).send(null, results);
-//     }
-//   });
-// });
 
 
 let port = 3005;

@@ -6,8 +6,9 @@ const connection = mysql.createConnection({
 	database: 'restaurants'
 });
 
-const getAll = function(callback) {
-	connection.query('SELECT * FROM banners', function(error, results) {
+const getAll = function(rest_id, callback) {
+	const query = `SELECT * FROM banners WHERE rest_id=${rest_id}`;
+	connection.query(query, (error, results, fields) => {
 		if (error) {
 			callback(error, null);
 		} else {
@@ -17,7 +18,7 @@ const getAll = function(callback) {
 };
 
 const getFiveRestaurants = function(callback) {
-	connection.query('SELECT * FROM banners LIMIT 5', function(error, results) {
+	connection.query('SELECT * FROM banners LIMIT 5', (error, results, fields) => {
 		if (error) {
 			callback(error, null);
 		} else {
