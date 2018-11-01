@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+const path = require('path');
 const db = require('../database/index.js');
 
 const connection = mysql.createConnection({
@@ -12,11 +13,10 @@ const connection = mysql.createConnection({
 const app = express();
 
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/public'));
-
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
 app.get('/restaurants/banners/:rest_id', (req, res) => {
-	db.getAll(req.params.rest_id, (error, results) => {
+	db.getOneRestaurant(req.params.rest_id, (error, results) => {
 		if (error) {
 			res.send(error);
 		} else {

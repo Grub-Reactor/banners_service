@@ -17,8 +17,9 @@ const getAll = function(rest_id, callback) {
 	});
 };
 
-const getFiveRestaurants = function(callback) {
-	connection.query('SELECT * FROM banners LIMIT 5', (error, results, fields) => {
+const getOneRestaurant = function(rest_id, callback) {
+	const query = `SELECT * FROM banners WHERE rest_id=${rest_id} LIMIT 1`;
+	connection.query(query, (error, results, fields) => {
 		if (error) {
 			callback(error, null);
 		} else {
@@ -40,6 +41,6 @@ const insertInfo = function(id, name, logo_img, bg_img, address, ph_number, rati
 
 module.exports = {
 	getAll: getAll,
-	getFiveRestaurants: getFiveRestaurants,
+	getOneRestaurant: getOneRestaurant,
 	insertInfo: insertInfo
 };
