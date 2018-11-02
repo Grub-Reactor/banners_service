@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
-class Background extends Component {
+class Bookshare extends Component {
   constructor(props) {
     super(props);
   }
   
   render() { 
     return (
-      <div className="bgview">
-          <img src="https://s3-us-west-1.amazonaws.com/banner.content/background.jpg" />
+      <div className="bsview">
+          <i class="fas fa-bookmark"></i><i class="fas fa-share-alt-square"></i>
       </div>
     )
   }
 }
 
-export default Background;
+export default Bookshare;

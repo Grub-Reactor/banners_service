@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import Background from './background.jsx';
+import Bookshare from './bookshare.jsx';
 import Logo from './logo.jsx';
 import Name from './name.jsx';
 import Address from './address.jsx';
@@ -32,6 +32,7 @@ class App extends React.Component {
       {
         this.state.restaurant ? (
           <div>
+          <Bookshare />
           <Logo /> 
           <Name name={this.state.restaurant.name} />
           <Address address={this.state.restaurant.address} />

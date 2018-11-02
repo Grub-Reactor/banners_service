@@ -4,6 +4,16 @@ div.view {
   height: 21.5em; 
   background-position-y: 17%;
   background-position-x: 0%;
+  opacity: 0.9;
+}
+
+div.bsview {
+  float: right;
+  font-size: 43px;
+  margin-top: 15px;
+  margin-right: 12px;
+  letter-spacing: 12px;
+  color: #F2000B;
 }
 
 img.logoview {
@@ -21,7 +31,7 @@ span.nameview {
   font-weight: 800;
   color: white;
   font-stretch: expanded;
-  font-size: 36px;
+  font-size: 38px;
 }
 
 span.addressview {
@@ -49,19 +59,19 @@ span.contactview {
 span.ratingview {
   display: inline-block;
   position: absolute;
-  margin-left: -7px;
-  margin-top: 222px;
+  margin-left: 25px;
+  margin-top: 237px;
   font-family: Garamond;
   font-weight: 800;
-  color: white;
-  font-size: 17px;
+  color: yellow;
+  font-size: 32px;
 }
 
 span.reviews {
   display: inline-block;
   position: absolute;
-  margin-left: 130px;
-  margin-top: 222px;
+  margin-left: 174px;
+  margin-top: 235px;
   font-family: Garamond;
   font-weight: 800;
   color: white;
