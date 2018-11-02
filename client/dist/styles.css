@@ -31,16 +31,16 @@ span.nameview {
   font-weight: 800;
   color: white;
   font-stretch: expanded;
-  font-size: 38px;
+  font-size: 40px;
 }
 
 span.addressview {
   display: inline-block;
   position: absolute;
   margin-left: -11px;
-  margin-top: 161px;
-  font-family: Garamond;
-  font-weight: 800;
+  margin-top: 168px;
+  font-family: Helvetica;
+  font-weight: 400;
   color: white;
   font-size: 17px;
 }
@@ -49,9 +49,9 @@ span.contactview {
   display: inline-block;
   position: absolute;
   margin-left: 133px;
-  margin-top: 161px;
-  font-family: Garamond;
-  font-weight: 800;
+  margin-top: 168px;
+  font-family: Helvetica;
+  font-weight: 400;
   color: white;
   font-size: 17px;
 }
@@ -61,10 +61,10 @@ span.reviews {
   position: absolute;
   margin-left: 174px;
   margin-top: 235px;
-  font-family: Garamond;
-  font-weight: 800;
+  font-family: Helvetica;
+  font-weight: 400;
   color: white;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .ratingview {
