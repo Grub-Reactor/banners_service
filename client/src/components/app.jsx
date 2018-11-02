@@ -17,6 +17,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+
     axios.get(`/restaurants/banners/rest_id`)
     .then(({ data }) => {
       console.log("this is data:", data);

@@ -10,7 +10,7 @@ class Bookshare extends Component {
   render() { 
     return (
       <div className="bsview">
-          <i class="fas fa-bookmark"></i><i class="fas fa-share-alt-square"></i>
+          <i className="fas fa-bookmark"></i><i className="fas fa-share-alt-square"></i>
       </div>
     )
   }
