@@ -9,9 +9,7 @@ class Logo extends Component {
   
   render() { 
     return (
-      <div className="logoview"> 
-          <img src="https://s3-us-west-1.amazonaws.com/banner.content/logo.png" />
-      </div>
+      <img className = "logoview" src="https://s3-us-west-1.amazonaws.com/banner.content/logo.png" />
     )
   }
 }

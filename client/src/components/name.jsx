@@ -8,9 +8,9 @@ class Name extends Component {
 
   render() {
     return (
-      <div className="nameview">
+      <span className="nameview">
         <ul>{this.props.name}</ul>
-      </div>
+      </span>
     )
   }
 }

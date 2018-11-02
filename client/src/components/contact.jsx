@@ -8,9 +8,9 @@ class Contact extends Component {
 
   render() { 
     return (  
-      <div className="contactview">
+      <span className="contactview">
         <ul>{this.props.ph_number}</ul>
-      </div>
+      </span>
     )
   }
 }

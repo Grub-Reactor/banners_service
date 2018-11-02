@@ -8,9 +8,9 @@ class Rating extends Component {
 
   render() { 
     return (  
-      <div className="ratingview"> 
+      <span className="ratingview"> 
         <ul>{this.props.rating}</ul>
-      </div>
+      </span>
     )
   }
 }

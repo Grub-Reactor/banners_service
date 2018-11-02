@@ -1,0 +1,69 @@
+div.view {
+  background-image: url("https://s3-us-west-1.amazonaws.com/banner.content/background.jpg");
+  background-repeat: no-repeat;
+  height: 21.5em; 
+  background-position-y: 17%;
+  background-position-x: 0%;
+}
+
+img.logoview {
+  margin-left: 34px;
+  margin-top: 111px;
+  max-height: 182px;
+  border-radius: 18px;
+}
+
+span.nameview {
+  position: absolute;
+  margin-left: -11px;
+  margin-top: 74px;
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  color: white;
+  font-stretch: expanded;
+  font-size: 36px;
+}
+
+span.addressview {
+  display: inline-block;
+  position: absolute;
+  margin-left: -11px;
+  margin-top: 161px;
+  font-family: Garamond;
+  font-weight: 800;
+  color: white;
+  font-size: 17px;
+}
+
+span.contactview {
+  display: inline-block;
+  position: absolute;
+  margin-left: 133px;
+  margin-top: 161px;
+  font-family: Garamond;
+  font-weight: 800;
+  color: white;
+  font-size: 17px;
+}
+
+span.ratingview {
+  display: inline-block;
+  position: absolute;
+  margin-left: -7px;
+  margin-top: 222px;
+  font-family: Garamond;
+  font-weight: 800;
+  color: white;
+  font-size: 17px;
+}
+
+span.reviews {
+  display: inline-block;
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 222px;
+  font-family: Garamond;
+  font-weight: 800;
+  color: white;
+  font-size: 17px;
+}

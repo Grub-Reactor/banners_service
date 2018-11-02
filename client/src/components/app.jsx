@@ -25,25 +25,27 @@ class App extends React.Component {
   }
 
   render () {
+    
     return (
       <div className="view">
 
       {
         this.state.restaurant ? (
           <div>
-          <Background /> 
           <Logo /> 
           <Name name={this.state.restaurant.name} />
           <Address address={this.state.restaurant.address} />
           <Contact ph_number={this.state.restaurant.ph_number} />
           <Rating rating={this.state.restaurant.rating} /> 
           <Reviews no_of_ratings={this.state.restaurant.no_of_ratings} /> 
+          
         </div>) :
         <div> ...loading</div>
       }
         
       </div>
     )
+    
   }
 }
 

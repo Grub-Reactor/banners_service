@@ -8,9 +8,9 @@ class Reviews extends Component {
 
   render() { 
     return (  
-      <div className="reviews"> 
-        <ul>{this.props.no_of_ratings}</ul>
-      </div>
+      <span className="reviews"> 
+        <ul>{this.props.no_of_ratings} Ratings</ul>
+      </span>
     )
   }
 }

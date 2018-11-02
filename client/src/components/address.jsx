@@ -8,9 +8,9 @@ class Address extends Component {
 
   render() { 
     return (  
-      <div className="addressview"> 
+      <span className="addressview"> 
         <ul>{this.props.address}</ul>
-      </div>
+      </span>
     )
   }
 }
