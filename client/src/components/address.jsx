@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Address extends Component {
   constructor(props) {
@@ -11,12 +11,12 @@ class Address extends Component {
       <span className="addressview"> 
         <ul>{this.props.address}</ul>
       </span>
-    )
+    );
   }
 }
 
 Address.propTypes = {
   address: PropTypes.string.isRequired,
-}
+};
  
 export default Address;

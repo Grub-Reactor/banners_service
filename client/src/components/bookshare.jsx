@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import axios from 'axios';
+import React, { Component } from "react";
 
 class Bookshare extends Component {
   constructor(props) {
@@ -12,7 +10,7 @@ class Bookshare extends Component {
       <div className="bsview">
           <i className="fas fa-bookmark"></i><i className="fas fa-share-alt-square"></i>
       </div>
-    )
+    );
   }
 }
 

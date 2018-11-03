@@ -1,6 +1,5 @@
-const mysql = require('mysql');
-const faker = require('faker');
-const db = require('./index.js');
+const faker = require("faker");
+const db = require("./index.js");
 
 const loadBannerDataToDb = function() {
 	for (let i = 0; i < 100; i++) {

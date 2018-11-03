@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import axios from 'axios';
+import React, { Component } from "react";
 
 class Logo extends Component {
   constructor(props) {
@@ -10,7 +8,7 @@ class Logo extends Component {
   render() { 
     return (
       <img className = "logoview" src="https://s3-us-west-1.amazonaws.com/banner.content/logo.png" />
-    )
+    );
   }
 }
  

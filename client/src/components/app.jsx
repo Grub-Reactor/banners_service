@@ -1,12 +1,12 @@
-import React from 'react';
-import axios from 'axios';
-import Bookshare from './bookshare.jsx';
-import Logo from './logo.jsx';
-import Name from './name.jsx';
-import Address from './address.jsx';
-import Contact from './contact.jsx';
-import Rating from './rating.jsx';
-import Reviews from './reviews.jsx';
+import React from "react";
+import axios from "axios";
+import Bookshare from "./bookshare.jsx";
+import Logo from "./logo.jsx";
+import Name from "./name.jsx";
+import Address from "./address.jsx";
+import Contact from "./contact.jsx";
+import Rating from "./rating.jsx";
+import Reviews from "./reviews.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -18,11 +18,10 @@ class App extends React.Component {
 
   componentDidMount() {
 
-    axios.get(`/restaurants/banners/rest_id`)
+    axios.get("/restaurants/banners/rest_id")
     .then(({ data }) => {
-      console.log("this is data:", data);
       this.setState({ restaurant: data[0] });
-    })
+    });
   }
 
   render () {
@@ -46,7 +45,7 @@ class App extends React.Component {
       }
         
       </div>
-    )
+    );
     
   }
 }

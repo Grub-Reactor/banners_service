@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Rating extends Component {
   constructor(props) {
@@ -16,12 +16,12 @@ class Rating extends Component {
           <img className="popimage" src="https://s3-us-west-1.amazonaws.com/banner.content/Grub-Popup.png" />
         </div>
       </div>
-    )
+    );
   }
 }
 
 Rating.propTypes = {
   rating: PropTypes.number.isRequired,
-}
+};
  
 export default Rating;

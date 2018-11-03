@@ -1,9 +1,9 @@
-const mysql = require('mysql');
+const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-	host: 'localhost',
-	user: 'root',
-	database: 'restaurants'
+	host: "localhost",
+	user: "root",
+	database: "restaurants"
 });
 
 const getAll = function(rest_id, callback) {
@@ -29,7 +29,7 @@ const getOneRestaurant = function(rest_id, callback) {
 };
 
 const insertInfo = function(id, name, logo_img, bg_img, address, ph_number, rating, no_of_ratings, bookmark, rest_id, callback) {
-	const query = `INSERT INTO banners (id, name, logo_img, bg_img, address, ph_number, rating, no_of_ratings, bookmark, rest_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+	const query = `INSERT INTO banners (id, name, logo_img, bg_img, address, ph_number, rating, no_of_ratings, bookmark, rest_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
 	connection.query(query, [id, name, logo_img, bg_img, address, ph_number, rating, no_of_ratings, bookmark, rest_id], function (error, results) {
 		if (error) {
 			callback(error, null);

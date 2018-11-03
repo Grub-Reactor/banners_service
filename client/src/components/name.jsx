@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Name extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Name extends Component {
       <span className="nameview">
         <ul>{this.props.name}</ul>
       </span>
-    )
+    );
   }
 }
 
