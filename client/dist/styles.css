@@ -1,0 +1,123 @@
+div.view {
+  background-image: url("https://s3-us-west-1.amazonaws.com/banner.content/background.jpg");
+  background-repeat: no-repeat;
+  height: 21.5em; 
+  background-position-y: 17%;
+  background-position-x: 0%;
+  opacity: 0.9;
+}
+
+div.bsview {
+  float: right;
+  font-size: 43px;
+  margin-top: 15px;
+  margin-right: 12px;
+  letter-spacing: 12px;
+  color: #F2000B;
+}
+
+img.logoview {
+  margin-left: 34px;
+  margin-top: 111px;
+  max-height: 182px;
+  border-radius: 18px;
+}
+
+span.nameview {
+  position: absolute;
+  margin-left: -11px;
+  margin-top: 74px;
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  color: white;
+  font-stretch: expanded;
+  font-size: 40px;
+}
+
+span.addressview {
+  display: inline-block;
+  position: absolute;
+  margin-left: -11px;
+  margin-top: 168px;
+  font-family: Helvetica;
+  font-weight: 400;
+  color: white;
+  font-size: 17px;
+}
+
+span.contactview {
+  display: inline-block;
+  position: absolute;
+  margin-left: 133px;
+  margin-top: 168px;
+  font-family: Helvetica;
+  font-weight: 400;
+  color: white;
+  font-size: 17px;
+}
+
+span.reviews {
+  display: inline-block;
+  position: absolute;
+  margin-left: 174px;
+  margin-top: 235px;
+  font-family: Helvetica;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+}
+
+.ratingview {
+  display: inline-block;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 237px;
+  font-family: Garamond;
+  font-weight: 800;
+  color: yellow;
+  font-size: 32px;
+}
+.popover__content {
+  margin-left: 60px;
+  margin-top: 25px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -132px;
+  top: 46px;
+  transform: translate(0,10px);
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: auto;
+}
+.popover__content:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  right: calc(50% - 10px);
+  top: -16px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #BFBFBF transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.ratingview:hover .popover__content {
+  z-index: 5;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0,-20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.popimage {
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
+}
+
+.stars {
+  color: yellow;
+}
